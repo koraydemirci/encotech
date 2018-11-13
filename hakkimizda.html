@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Encotech</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div>
+        <nav class="teal lighten-2">
+          <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo">Entech</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Anasayfa</a></li>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="projeler.html">Projeler</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+          <li><a class="teal-text" href="index.html">ENCOTECH</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="projeler.html">Projeler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="section about">
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="col s12 l6">
+            <img
+              src="/img/construction-planning.jpg"
+              alt=""
+              class="responsive-img"
+            />
+          </div>
+          <div class="col s12 l6">
+            <p>
+              Encotech Makina İnşaat Mühendislik Sanayi ve Dış Ticaret Limited
+              Şirketi, 2006 yılında inşaat ve taahhüt sektöründe faaliyetlerine
+              başlamış olup, 2016 yılında Ankara merkezli bir şirket olarak
+              faaliyetlerine devam etmektedir. Encotech; 2006-2015 yılları
+              arasında başta Ukrayna, Gürcistan, Azerbaycan ve Suudi Arabistan
+              olmak üzere yurt dışında altyapı, üstyapı ve endüstriyel tesis
+              alanlarında önemli projeleri tamamlamıştır. 2016 yılından itibaren
+              Ankara merkezli firma olarak faaliyetlerine gerek yurt içi gerekse
+              yurt dışında devam etmektedir. Şirket kurucuları; 20 yıl ve üzeri
+              deneyime sahip olup; mesleki deneyim süreçlerinde gerek yerli
+              gerekse de uluslararası EPC firmalarla birlikte büyük ölçekli
+              projelerde görev almışlardır.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer teal lighten-2 ">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <p class="white-text">
+              Encotech Makina İnşaat Mühendislik Sanayi ve Dış Ticaret Limited
+              Şirketi
+            </p>
+            <p>© 2018 Her Hakkı Saklıdır - <em>Developed by Koray Demirci</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class="white-text" href="#!">Anasayfa</a></li>
+              <li><a class="white-text" href="#!">Hakkımızda</a></li>
+              <li><a class="white-text" href="#!">Projeler</a></li>
+              <li><a class="white-text" href="#!">İletişim</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+
+        $('.responsive').slick({
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>
