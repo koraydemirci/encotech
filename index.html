@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,60 +27,75 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Encotech</title>
   </head>
+
   <body>
     <header class="main-header">
       <div class="video-wrapper">
         <video autoplay muted loop>
-          <source src="img/construction-site.mp4" type="video/mp4" />
+          <source src="img/construction-video.mp4" type="video/mp4" />
           <!-- <source src="img/Hello-World.webm" type="video/webm"> -->
           Your browser is not supported!
         </video>
         <div class="overlay valign-wrapper justify-content-center">
           <div class="overlay-text center-align">
-            <h1>Geleceği Yapılandırıyoruz</h1>
+            <h5>Çocuklarımız İçin</h5>
+            <h1>Geleceği İnşaa Ediyoruz</h1>
             <a
               href="iletisim.html"
-              class="waves-effect waves-light btn teal lighten-2"
-              >Bize Ulaşın</a
+              class="waves-effect waves-light btn btn-large blue "
+              >BİZE ULAŞIN</a
             >
           </div>
         </div>
       </div>
 
+      <div class="icon-container">
+        <a
+          href="#features"
+          class="material-icons medium white-text main-header-arrow"
+          >arrow_drop_down_circle</a
+        >
+      </div>
+
       <div class="navigation">
         <nav class="transparent">
           <div class="nav-wrapper container">
-            <a href="index.html" class="brand-logo">ENTECH</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            <div class="brand-logo-container ">
+              <a href="index.html" class="brand-logo"
+                ><img src="img/encotech.png" alt=""
+              /></a>
+            </div>
+            <a ref="#" data-target="mobile-demo" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
-            <ul class="right hide-on-med-and-down">
-              <li><a href="index.html">Anasayfa</a></li>
-              <li><a href="hakkimizda.html">Hakkımızda</a></li>
-              <li><a href="projeler.html">Projeler</a></li>
-              <li><a href="iletisim.html">İletişim</a></li>
+            <ul class="nav-list right hide-on-med-and-down">
+              <li class="active"><a href="index.html">ANASAYFA</a></li>
+              <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+              <li><a href="projeler.html">PROJELER</a></li>
+              <li><a href="iletisim.html">İLETİŞİM</a></li>
+
+              <li class="flag-list">
+                <a class="flag-link" href="homepage.html"
+                  ><img
+                    src="img/united-kingdom-flag-icon-64.png"
+                    alt="british-flag"
+                /></a>
+              </li>
             </ul>
           </div>
         </nav>
-
-        <ul class="sidenav" id="mobile-demo">
-          <li><a class="teal-text" href="index.html">ENCOTECH</a></li>
-          <li><a href="hakkimizda.html">Hakkımızda</a></li>
-          <li><a href="projeler.html">Projeler</a></li>
-          <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
       </div>
     </header>
-    <main class="section">
-      <!-- OZELLIKLER -->
-      <section class="section center features">
+
+    <main class="grey lighten-5">
+      <!-- FEATURES -->
+      <section class="center features scrollspy" id="features">
         <div class="container">
           <div class="row">
             <div class="col s12 offset-l2 l8">
-              <p class="flow-text">
-                <img src="img/encotech.png" alt="logo" class="logo-image" />
-                2006 yılında inşaat ve taahhüt sektöründe faaliyetlerine
-                başlamış olup, 2016 yılında Ankara merkezli bir şirket olarak
+              <p class="features__info">
+                ENCOTECH, 2006 yılında inşaat ve taahhüt sektöründe
+                faaliyetlerine başlamış olup Ankara merkezli bir şirket olarak
                 faaliyetlerine devam etmektedir. Encotech, 2006-2015 yılları
                 arasında başta Ukrayna, Gürcistan, Azerbaycan ve Suudi Arabistan
                 olmak üzere yurt dışında altyapı, üstyapı ve endüstriyel tesis
@@ -88,25 +103,30 @@
               </p>
             </div>
           </div>
-          <div class="row d-flex">
+          <div class="row d-flex features__card-row">
             <div class="col s12 m6 xl3">
               <div class="card-panel">
-                <p><img src="img/icons8-calendar-20-80.png" alt="" /></p>
-                <h6 class="teal-text text-lighten-2">20 YILLIK TECRÜBE</h6>
-                <p>İnşaat, taahhüt ve mühendislikte 20 yıllık tecrübe</p>
+                <p>
+                  <img
+                    src="img/icons8-calendar-22-80.png"
+                    alt="calendar-icon"
+                  />
+                </p>
+                <h6 class="blue-text">22 YILLIK TECRÜBE</h6>
+                <p>İnşaat, taahhüt ve mühendislikte 22 yıllık tecrübe</p>
               </div>
             </div>
             <div class="col s12 m6 xl3">
               <div class="card-panel">
                 <p><img src="img/icons8-user-groups-64.png" alt="" /></p>
-                <h6 class="teal-text text-lighten-2">PROFESYONEL EKİP</h6>
+                <h6 class="blue-text">PROFESYONEL EKİP</h6>
                 <p>Profesyonel ekibimiz ile tüm projeleriniz bize emanet</p>
               </div>
             </div>
             <div class="col s12 m6 xl3">
               <div class="card-panel">
-                <p><img src="img/icons8-speed-64.png" alt="" /></p>
-                <h6 class="teal-text text-lighten-2">HIZLI ÇÖZÜM</h6>
+                <p><img src="img/icons8-speed-64.png" alt="speed-icon" /></p>
+                <h6 class="blue-text">HIZLI ÇÖZÜM</h6>
                 <p>
                   Tecrübemizle profesyonelliğimizi birleştirerek hizmetinize
                   sunuyoruz
@@ -115,301 +135,161 @@
             </div>
             <div class="col s12 m6 xl3">
               <div class="card-panel">
-                <p><img src="img/icons8-heart-outline-80.png" alt="" /></p>
-                <h6 class="teal-text text-lighten-2">MÜŞTERİ MEMNUNİYETİ</h6>
-                <p>En önem verdiğimiz değerlerden biri memnuniyet</p>
+                <p>
+                  <img src="img/icons8-heart-outline-80.png" alt="heart-icon" />
+                </p>
+                <h6 class="blue-text">MÜŞTERİ MEMNUNİYETİ</h6>
+                <p>En önem verdiğimiz değerlerden biri memnuniyeti</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section valign-wrapper justify-content-center   banner-1">
-        <h2 class="white-text">Hayallerinizi inşaa ettik</h2>
+      <section
+        class="valign-wrapper justify-content-center banner homepage-banner-1"
+      >
+        <h4 class="white-text">22 Senedir Güvenin Adresi Olduk</h4>
       </section>
 
-      <!-- PROJELER -->
-      <section class="section">
-        <h4 class="center-align teal-text text-lighten-2 left-title">
-          PROJELERiMiZ
-        </h4>
+      <!-- PROJECTS -->
+      <section class="projects">
+        <h3 class="center-align blue-text projects__title">PROJELERiMiZ</h3>
         <div class="custom-container">
           <div class="responsive">
             <div>
               <div class="card">
                 <div class="card-image">
-                  <img src="img/kiev.jpg" />
-                  <span class="card-title teal lighten-2"
-                    >ABD Kiev Elçiliği
-                  </span>
-                </div>
-                <div class="card-content">
-                  <p>ABD Kiev elçiliği bina tedarik ve inşaatı</p>
-                  <p>1072 m<sup>2</sup></p>
-                </div>
-                <div class="card-action">
-                  <a class="btn-flat teal-text"
-                    >DAHA FAZLASI
-                    <i class="material-icons teal-text text-lighten-2  right"
-                      >send</i
-                    >
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/akula-is-merkezi.jpg" />
-                  <span class="card-title teal lighten-2"
-                    >Akula İş Merkezi</span
-                  >
-                </div>
-                <div class="card-content">
-                  <p>24 katlı binanın kaba yapı inşaatı, Donetsk-Ukrayna</p>
-                  <p>16,000 m<sup>2</sup></p>
-                </div>
-                <div class="card-action">
-                  <a class="btn-flat teal-text"
-                    >DAHA FAZLASI
-                    <i class="material-icons teal-text text-lighten-2  right"
-                      >send</i
-                    >
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/can-termik.jpg" />
-                  <span class="card-title teal lighten-2"
-                    >Çan Termik Santrali</span
-                  >
+                  <img src="img/can-termik.jpg" alt="construction-site-photo" />
+                  <span class="card-title blue">Çan Termik Santrali</span>
                 </div>
                 <div class="card-content">
                   <p>
                     Santralin bütün betonarme inşaat ve ince işlerinin yapımı
                   </p>
                 </div>
-                <div class="card-action">
-                  <a class="btn-flat teal-text "
-                    >DAHA FAZLASI
-                    <i class="material-icons teal-text text-lighten-2  right"
-                      >send</i
-                    >
-                  </a>
-                </div>
               </div>
             </div>
             <div>
               <div class="card">
                 <div class="card-image">
-                  <img src="img/honda-plaza.jpg" />
-                  <span class="card-title teal lighten-2">Honda Plaza</span>
-                </div>
-                <div class="card-content">
-                  <p>Honda plaza inşaatı</p>
-                  <p>8,000 m<sup>2</sup></p>
-                </div>
-                <div class="card-action">
-                  <a class="btn-flat teal-text"
-                    >DAHA FAZLASI
-                    <i class="material-icons teal-text text-lighten-2  right"
-                      >send</i
-                    >
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/lapseki-altin-isleme.jpg" />
-                  <span class="card-title teal lighten-2"
+                  <img
+                    src="img/lapseki-altin-isleme.jpg"
+                    alt="construction-site-photo"
+                  />
+                  <span class="card-title blue"
                     >Lapseki Altın İşleme Tesisi</span
                   >
                 </div>
                 <div class="card-content">
                   <p>
-                    Fine Ore Binası, Grinding Binası, roll-Mill Binası,
+                    Fine Ore Binası, Grinding Binası, Roll-Mill Binası,
                     Screening Binası, Tank Bölgesi İnşaat İşleri
                   </p>
-                </div>
-                <div class="card-action">
-                  <a class="btn-flat teal-text"
-                    >DAHA FAZLASI
-                    <i class="material-icons teal-text text-lighten-2 right"
-                      >send</i
-                    >
-                  </a>
                 </div>
               </div>
             </div>
             <div>
               <div class="card">
                 <div class="card-image">
-                  <img src="img/mirax-plaza.jpg" />
-                  <span class="card-title teal lighten-2"
-                    >Mirax Plaza İkiz Kule</span
-                  >
+                  <img
+                    src="img/honda-plaza.jpg"
+                    alt="construction-site-photo"
+                  />
+                  <span class="card-title blue">Honda Plaza</span>
+                </div>
+                <div class="card-content">
+                  <p>8,000 m<sup>2</sup>'lik Honda Plaza inşaatı</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/mirax-plaza.jpg"
+                    alt="construction-site-photo"
+                  />
+                  <span class="card-title blue">Mirax Plaza İkiz Kuleleri</span>
                 </div>
                 <div class="card-content">
                   <p>47 katlı binanın betonarme kaba yapı işleri</p>
                 </div>
-                <div class="card-action">
-                  <a class="btn-flat teal-text"
-                    >DAHA FAZLASI
-                    <i class="material-icons teal-text text-lighten-2 right "
-                      >send</i
-                    >
-                  </a>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/kiev.jpg" alt="construction-site-photo" />
+                  <span class="card-title blue">ABD Kiev Elçiliği </span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    1072 m<sup>2</sup>'lik ABD Kiev Elçiliği Bina Tedarik ve
+                    İnşaatı
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="img/akula-is-merkezi.jpg"
+                    alt="construction-site-photo"
+                  />
+                  <span class="card-title blue">Akula İş Merkezi</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    16,000 m<sup>2</sup>, 24 katlı binanın kaba yapı inşaatı,
+                    Donetsk-Ukrayna
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="section valign-wrapper justify-content-center   banner-2">
-        <h2 class="white-text">20 Senedir Güvenin Adresi Olduk</h2>
-      </section>
-
-      <!-- HABERLER -->
-      <section class="section news">
-        <h4 class="center-align teal-text text-lighten-2 right-title">
-          BİZDEN HABERLER
-        </h4>
-        <div class="container">
-          <div class="media">
-            <img
-              class="media-object"
-              src="img/honda-plaza.jpg"
-              alt="Sample photo"
-            />
-            <div class="media-body">
-              <h6 class="media-heading">3 Eylül 2018</h6>
-              <p>
-                Encotech, Rusya'nın Krasnodar şehrinde şirket kurulumunu
-                yapmıştır. Gisenco adı altında faaliyetlerine başlamıştır!
-              </p>
-            </div>
-          </div>
-          <div class="media">
-            <img
-              class="media-object"
-              src="img/akula-is-merkezi.jpg"
-              alt="Sample photo"
-            />
-            <div class="media-body">
-              <h6 class="media-heading">5 Temmuz 2018</h6>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,
-                nostrum! Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Delectus, soluta porro a nisi officia velit.
-              </p>
-            </div>
-          </div>
-          <div class="media">
-            <img
-              class="media-object"
-              src="img/can-termik.jpg"
-              alt="Sample photo"
-            />
-            <div class="media-body">
-              <h6 class="media-heading">21 Nisan 2018</h6>
-              <p>
-                Encotech, Rusya'nın Krasnodar şehrinde şirket kurulumunu
-                yapmıştır. Gisenco adı altında faaliyetlerine başlamıştır!
-              </p>
-            </div>
-          </div>
-          <div class="media">
-            <img class="media-object" src="img/kiev.jpg" alt="Sample photo" />
-            <div class="media-body">
-              <h6 class="media-heading">10 Ocak 2018</h6>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                quasi quod error accusamus repellendus libero eos blanditiis
-                vero dignissimos quia.
-              </p>
-            </div>
-          </div>
+        <div class="valign-wrapper justify-content-center read-more-button">
+          <a href="projeler.html" class="btn btn-large blue">
+            Daha Fazla<i class="material-icons right">send</i>
+          </a>
         </div>
       </section>
 
-      <section class="section map">
-        <h4 class="center-align teal-text text-lighten-2 left-title">ULAŞIM</h4>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.8009930354415!2d32.65558905085691!3d39.878695379330274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d33930e33f3aa9%3A0xbcb1169ebf5b04a6!2sWEST+GATE+RESIDENCE!5e0!3m2!1sen!2str!4v1542137504679"
-          frameborder="0"
-          style="border:0"
-          allowfullscreen
-        ></iframe>
+      <section
+        class="section valign-wrapper justify-content-center banner homepage-banner-2"
+      >
+        <h4 class="white-text">Hayallerinizi İnşaa Ettik</h4>
       </section>
 
-      <section class="section container">
-        <div class="row">
-          <div class="col s12 l4">
-            <h5 class="center-align teal-text text-lighten-2">
-              İLETİŞİM BİLGİLERİ
-            </h5>
-            <div class="card-panel">
-              <h6 class="teal-text text-lighten-2">Adres</h6>
-              <p>
-                West Gate İş Merkezi Konutkent Mah. 3028 Sk. No:2 A Blok-264
-                Çankaya/Ankara
-              </p>
-              <h6 class="teal-text text-lighten-2">Telefon</h6>
-              <p>+90 312 227 00 41</p>
+      <!-- NEWS -->
+      <section class="news">
+        <h3 class="center-align blue-text news__title">BİZDEN HABERLER</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m3 l4">
+              <img
+                class="responsive-img"
+                src="img/can-termik.jpg"
+                alt="Sample photo"
+              />
             </div>
-          </div>
-          <div class="col s12 l8">
-            <h5 class="center-align teal-text text-lighten-2">BİZE YAZIN</h5>
-            <form
-              class="card-panel"
-              method="post"
-              action="https://formspree.io/koraydemirci@gmail.com"
-            >
-              <div class="input-field">
-                <input
-                  placeholder="İsim - Soyisim"
-                  type="text"
-                  class="validate"
-                  name="İsim Soyisim"
-                />
-              </div>
-              <div class="input-field">
-                <input
-                  placeholder="Email"
-                  type="email"
-                  class="validate"
-                  name="Email"
-                />
-              </div>
-              <div class="input-field">
-                <textarea
-                  placeholder="Mesaj"
-                  class="materialize-textarea"
-                  name="Mesaj"
-                ></textarea>
-              </div>
-              <div class="d-flex justify-content-center">
-                <button
-                  class="btn btn-large
-              teal lighten-2 waves-effect waves-light"
-                  type="submit"
-                >
-                  GÖNDER <i class="material-icons right">send</i>
-                </button>
-              </div>
-            </form>
+            <div class="col s12 m9 l8">
+              <h6 class="blue-text">3 Eylül 2018</h6>
+              <p>
+                ENCOTECH olarak Rusya'nın Krasnodar şehrinde şirket kuruluşunu
+                yaparak Gisenco adı altında faaliyetlerimize başladık.
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer teal lighten-2">
+    <footer class="page-footer blue blue-darken-4">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -423,15 +303,27 @@
           </div>
           <div class="col l4 offset-l2 s12">
             <ul>
-              <li><a class="white-text" href="#!">Anasayfa</a></li>
-              <li><a class="white-text" href="#!">Hakkımızda</a></li>
-              <li><a class="white-text" href="#!">Projeler</a></li>
-              <li><a class="white-text" href="#!">İletişim</a></li>
+              <li><a class="white-text" href="index.html">Anasayfa</a></li>
+              <li>
+                <a class="white-text" href="hakkimizda.html">Hakkımızda</a>
+              </li>
+              <li><a class="white-text" href="projeler.html">Projeler</a></li>
+              <li><a class="white-text" href="iletisim.html">İletişim</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- SIDEBAR -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="homepage.html">ANASAYFA</a></li>
+      <li><a href="about.html">HAKKIMIZDA</a></li>
+      <li><a href="projects.html">PROJELER</a></li>
+      <li><a href="contact.html">İLETİŞİM</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="blue-text" href="homepage.html">ENGLISH</a></li>
+    </ul>
 
     <script
       type="text/javascript"
@@ -441,9 +333,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        //Sidebar
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
 
+        //Scrollspy
+        $('.scrollspy').scrollSpy();
+
+        // Carousel
         $('.responsive').slick({
           infinite: true,
           speed: 300,
@@ -464,10 +361,6 @@
                 slidesToScroll: 1
               }
             }
-
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
           ]
         });
       });
