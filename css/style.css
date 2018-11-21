@@ -45,8 +45,6 @@ h6 {
   height: 30%;
 }
 
-/* Banner */
-
 /* Navigation */
 .brand-logo-container {
   height: 100%;
@@ -93,6 +91,7 @@ h6 {
   display: block;
 }
 
+.main-overlay,
 .overlay {
   position: absolute;
   top: 0;
@@ -193,11 +192,6 @@ h6 {
   font-size: 30px;
 }
 
-.custom-container {
-  max-width: 90%;
-  margin: auto;
-}
-
 .read-more-button {
   margin-top: 3rem;
 }
@@ -217,10 +211,7 @@ h6 {
 
 /* ========ABOUT PAGE ========= */
 .about__image-wrapper {
-  height: 50vh;
   background: url('../img/about-header.jpeg');
-  background-size: cover;
-  background-position: center;
 }
 
 .about {
@@ -253,10 +244,7 @@ blockquote {
 
 /* ======== PROJECTS PAGE  ======= */
 .projects__image-wrapper {
-  height: 50vh;
   background: url('../img/projects-header.jpeg');
-  background-size: cover;
-  background-position: center;
 }
 
 .projects__main {
@@ -269,15 +257,11 @@ blockquote {
 
 .projects__main img {
   border: 2px solid #999;
-  box-shadow: ;
 }
 
 /* ========= CONTACT PAGE =========*/
 .contact__image-wrapper {
-  height: 50vh;
   background: url('../img/contact-header.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .map {
@@ -303,4 +287,80 @@ blockquote {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding: 1rem;
+}
+
+.image-wrapper {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ========MEDIA QUERIES========= */
+@media only screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 100%;
+  }
+
+  .main-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .main-overlay a,
+  .icon-container {
+    display: none;
+  }
+
+  .features {
+    padding: 2rem 0;
+  }
+
+  .projects,
+  .news {
+    padding: 3rem 0;
+  }
+
+  .image-wrapper {
+    height: 40vh;
+  }
+
+  .read-more-button {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 90%;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .main-overlay {
+    display: none;
+  }
+
+  .features {
+    padding: 1rem 0;
+  }
+
+  .projects,
+  .news {
+    padding: 2rem 0;
+  }
+
+  .banner {
+    min-height: 30vh;
+  }
+
+  .image-wrapper {
+    height: 30vh;
+  }
+
+  .read-more-button {
+    margin-top: 0rem;
+  }
 }
