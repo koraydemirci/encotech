@@ -2,11 +2,16 @@
 
 /* ======== HELPERS ====== */
 .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -36,8 +41,12 @@ h6 {
 }
 
 .flag-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -48,7 +57,11 @@ h6 {
 /* Navigation */
 .brand-logo-container {
   height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -150,6 +163,8 @@ h6 {
   position: absolute;
   bottom: 3%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 100;
 }
@@ -159,12 +174,36 @@ h6 {
 }
 
 .homepage-banner-1 {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url('../img/banner-1.jpg');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/banner-1.jpg');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/banner-1.jpg');
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../img/banner-1.jpg');
 }
 
 .homepage-banner-2 {
   min-height: 40vh;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url('../img/banner-2.jpg');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/banner-2.jpg');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/banner-2.jpg');
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../img/banner-2.jpg');
 }
@@ -224,6 +263,18 @@ h6 {
 
 .about__banner {
   min-height: 40vh;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url('../img/about-header-banner.jpeg');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/about-header-banner.jpeg');
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/about-header-banner.jpeg');
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('../img/about-header-banner.jpeg');
 }
@@ -331,10 +382,6 @@ blockquote {
 }
 
 @media only screen and (max-width: 600px) {
-  html {
-    font-size: 90%;
-  }
-
   h3 {
     font-size: 2rem;
   }
@@ -345,6 +392,11 @@ blockquote {
 
   .features {
     padding: 1rem 0;
+  }
+
+  .projects-container {
+    width: 75%;
+    margin: auto;
   }
 
   .projects,
