@@ -30,26 +30,20 @@
 
   <body>
     <header class="main-header">
-      <div class="video-wrapper">
-        <video autoplay muted loop>
-          <source src="img/construction-video.mp4" type="video/mp4" />
-          <!-- <source src="img/Hello-World.webm" type="video/webm"> -->
-          Your browser is not supported!
-        </video>
-        <div class="main-overlay valign-wrapper justify-content-center">
-          <div class="overlay-text center-align">
+      <div class="homepage__image-wrapper">
+        <div class="overlay valign-wrapper justify-content-center">
+          <div class="white-text center-align hide-on-small-only">
             <h5>Çocuklarımız İçin</h5>
             <h1>Geleceği İnşaa Ediyoruz</h1>
             <a
               href="iletisim.html"
-              class="waves-effect waves-light btn btn-large blue"
+              class="waves-effect waves-light btn btn-large blue hide-on-med-and-down"
               >BİZE ULAŞIN</a
             >
           </div>
         </div>
       </div>
-
-      <div class="icon-container">
+      <div class="icon-container hide-on-med-and-down">
         <a
           href="#features"
           class="material-icons medium white-text main-header-arrow"
@@ -58,12 +52,10 @@
       </div>
 
       <div class="navigation">
-        <nav class="transparent">
+        <nav class="nav-bar transparent">
           <div class="nav-wrapper container">
-            <div class="brand-logo-container hide-on-small-only">
-              <a href="index.html" class="brand-logo"
-                ><img src="img/encotech.png" alt=""
-              /></a>
+            <div class="brand-logo-container">
+              <a href="index.html" class="brand-logo">ENCOTECH</a>
             </div>
             <a ref="#" data-target="mobile-demo" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
@@ -94,36 +86,39 @@
           <div class="row">
             <div class="col s12 offset-l2 l8">
               <p class="features__info">
-                ENCOTECH, 2006 yılında inşaat ve taahhüt sektöründe
-                faaliyetlerine başlamış olup Ankara merkezli bir şirket olarak
-                faaliyetlerine devam etmektedir. Encotech, 2006-2015 yılları
-                arasında başta Ukrayna, Gürcistan, Azerbaycan ve Suudi Arabistan
-                olmak üzere yurt dışında altyapı, üstyapı ve endüstriyel tesis
-                alanlarında önemli projeleri tamamlamıştır.
+                Kurucu ve ortaklarının 2006 yılından itibaren inşaat ve taahhüt
+                sektöründe şirket hüviyetiyle faaliyetlerine ilk olarak
+                Ukrayna'da başlamış olup Ankara merkezli yeni şirketi ENCOTECH
+                ile 2016 yılından itibaren Gürcistan, Azerbaycan, Suudi
+                Arabistan, ve Rusya olmak üzere yurt dışında altyapı, üstyapı ve
+                endüstriyel tesis alanlarında önemli projeleri tamamlamıştır.
               </p>
             </div>
           </div>
           <div class="row d-flex features__card-row">
             <div class="col s12 m6 xl3">
               <div class="card-panel">
-                <p>
-                  <p><i class="large material-icons blue-text">today</i></p>
-                </p>
-                <h6 >22 YILLIK TECRÜBE</h6>
-                <p>İnşaat, taahhüt ve mühendislikte 22 yıllık tecrübe</p>
+                <p></p>
+                <p><i class="large material-icons blue-text">today</i></p>
+                <h6>25 YILLIK TECRÜBE</h6>
+                <p>İnşaat, taahhüt ve mühendislikte 25 yıllık tecrübe</p>
               </div>
             </div>
             <div class="col s12 m6 xl3">
               <div class="card-panel">
-                <p><i class="large material-icons blue-text">supervisor_account</i></p>
-                <h6 >PROFESYONEL EKİP</h6>
+                <p>
+                  <i class="large material-icons blue-text"
+                    >supervisor_account</i
+                  >
+                </p>
+                <h6>PROFESYONEL EKİP</h6>
                 <p>Profesyonel ekibimiz ile tüm projeleriniz bize emanet</p>
               </div>
             </div>
             <div class="col s12 m6 xl3">
               <div class="card-panel">
                 <p><i class="large material-icons blue-text">access_time</i></p>
-                <h6 >HIZLI ÇÖZÜM</h6>
+                <h6>HIZLI ÇÖZÜM</h6>
                 <p>
                   Tecrübemizle profesyonelliğimizi birleştirerek hizmetinize
                   sunuyoruz
@@ -132,8 +127,12 @@
             </div>
             <div class="col s12 m6 xl3">
               <div class="card-panel">
-                <p><i class="large material-icons blue-text">sentiment_very_satisfied</i></p>
-                <h6 >MÜŞTERİ MEMNUNİYETİ</h6>
+                <p>
+                  <i class="large material-icons blue-text"
+                    >sentiment_very_satisfied</i
+                  >
+                </p>
+                <h6>MÜŞTERİ MEMNUNİYETİ</h6>
                 <p>En önem verdiğimiz değerlerden biri memnuniyeti</p>
               </div>
             </div>
@@ -257,7 +256,7 @@
       <section
         class="section valign-wrapper justify-content-center banner homepage-banner-2"
       >
-        <h4 class="white-text">Hayallerinizi İnşaa Ettik</h4>
+        <h4 class="white-text">Hayallerimizi İnşaa Ettik</h4>
       </section>
 
       <!-- NEWS -->
@@ -268,7 +267,24 @@
             <div class="col s12 m3 l4">
               <img
                 class="responsive-img"
-                src="img/can-termik.jpg"
+                src="img/amur-gas-2.jpg"
+                alt="Sample photo"
+              />
+            </div>
+            <div class="col s12 m9 l8">
+              <h6 class="blue-text">13 Ekim 2018</h6>
+              <p>
+                ENCOTECH, Rusya'nın Svabodny bölgesinde yapımı başlayan Amur
+                Natural Gas Plant Projesi'nde YAMATA A.Ş.' nin alt yüklenicisi
+                olarak çalışmalarına başlamıştır.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m3 l4">
+              <img
+                class="responsive-img"
+                src="img/amur-gas.jpg"
                 alt="Sample photo"
               />
             </div>

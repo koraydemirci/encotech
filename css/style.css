@@ -65,18 +65,6 @@ h6 {
   align-items: center;
 }
 
-.brand-logo {
-  background-color: #fff;
-  height: 80%;
-  border-radius: 2px;
-}
-
-.brand-logo img {
-  display: block;
-  height: 90%;
-  margin-top: 2px;
-}
-
 .navigation {
   position: absolute;
   top: 0;
@@ -90,9 +78,22 @@ h6 {
   display: block;
 }
 
+.sidenav-trigger {
+  cursor: pointer;
+}
+
 /* Footer */
 .page-footer .row {
   margin-bottom: 0;
+}
+
+/* Sidenav */
+
+.sidenav {
+  padding-top: 2rem;
+}
+.sidenav a {
+  font-size: 1.4rem !important;
 }
 
 /* ======== MAIN HEADER ====== */
@@ -104,7 +105,6 @@ h6 {
   display: block;
 }
 
-.main-overlay,
 .overlay {
   position: absolute;
   top: 0;
@@ -112,15 +112,19 @@ h6 {
   height: 100%;
   width: 100%;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.overlay-text {
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* ========== HOMEPAGE ========= */
 /* Header */
+
+.homepage__image-wrapper {
+  background: url('../img/construction-site.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
 .main-header h5 {
   letter-spacing: 1px;
 }
@@ -128,22 +132,6 @@ h6 {
 .main-header h1 {
   letter-spacing: 2px;
   margin-top: 1rem;
-}
-
-.video-wrapper {
-  position: relative;
-  display: block;
-  height: 100%;
-}
-
-.video-wrapper video {
-  position: relative;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: block;
 }
 
 .main-header-arrow {
@@ -178,15 +166,15 @@ h6 {
       linear,
       left top,
       left bottom,
-      from(rgba(0, 0, 0, 0.4)),
-      to(rgba(0, 0, 0, 0.4))
+      from(rgba(0, 0, 0, 0.1)),
+      to(rgba(0, 0, 0, 0.1))
     ),
     url('../img/banner-1.jpg');
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('../img/banner-1.jpg');
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('../img/banner-1.jpg');
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('../img/banner-1.jpg');
 }
 
@@ -196,15 +184,15 @@ h6 {
       linear,
       left top,
       left bottom,
-      from(rgba(0, 0, 0, 0.4)),
-      to(rgba(0, 0, 0, 0.4))
+      from(rgba(0, 0, 0, 0.1)),
+      to(rgba(0, 0, 0, 0.1))
     ),
     url('../img/banner-2.jpg');
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('../img/banner-2.jpg');
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('../img/banner-2.jpg');
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('../img/banner-2.jpg');
 }
 
@@ -250,7 +238,7 @@ h6 {
 
 /* ========ABOUT PAGE ========= */
 .about__image-wrapper {
-  background: url('../img/about-header.jpeg');
+  background: url('../img/about-header.jpg');
 }
 
 .about {
@@ -270,13 +258,13 @@ h6 {
       from(rgba(0, 0, 0, 0.4)),
       to(rgba(0, 0, 0, 0.4))
     ),
-    url('../img/about-header-banner.jpeg');
+    url('../img/about-header-banner.jpg');
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/about-header-banner.jpeg');
+    url('../img/about-header-banner.jpg');
   background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/about-header-banner.jpeg');
+    url('../img/about-header-banner.jpg');
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/about-header-banner.jpeg');
+    url('../img/about-header-banner.jpg');
 }
 
 .carousel {
@@ -295,7 +283,7 @@ blockquote {
 
 /* ======== PROJECTS PAGE  ======= */
 .projects__image-wrapper {
-  background: url('../img/projects-header.jpeg');
+  background: url('../img/projects-header.jpg');
 }
 
 .projects__main {
@@ -308,6 +296,10 @@ blockquote {
 
 .projects__main img {
   border: 2px solid #999;
+}
+
+.projects-line {
+  border-color: #2196f3;
 }
 
 /* ========= CONTACT PAGE =========*/
@@ -354,13 +346,12 @@ blockquote {
     font-size: 100%;
   }
 
-  .main-overlay h1 {
-    font-size: 3rem;
+  .homepage__image-wrapper {
+    max-height: 70vh;
   }
 
-  .main-overlay a,
-  .icon-container {
-    display: none;
+  .overlay h1 {
+    font-size: 3rem;
   }
 
   .features {
@@ -386,8 +377,12 @@ blockquote {
     font-size: 2rem;
   }
 
-  .main-overlay {
-    display: none;
+  .homepage__image-wrapper {
+    max-height: 50vh;
+  }
+
+  .nav-bar {
+    background-color: #2196f3 !important;
   }
 
   .features {
@@ -406,10 +401,6 @@ blockquote {
 
   .banner {
     min-height: 30vh;
-  }
-
-  .image-wrapper {
-    height: 30vh;
   }
 
   .read-more-button {
